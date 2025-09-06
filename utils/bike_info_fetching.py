@@ -284,4 +284,28 @@ if __name__ == "__main__":
     LYON_WEBSITE = "https://velov.grandlyon.com"
 
     # TODO fix me for Lyon
-    CommercialBikeClient(BRUSSELS_WEBSITE).get_bikes_at_station("34")
+    api_client = CommercialBikeClient(BRUSSELS_WEBSITE)
+
+    api_client.get_stations()
+    api_client.get_bikes_at_station("34")
+
+    # TODO
+    #    * Create an SQLite DB
+    #    * Create a table in DB to store the stations with the following attributes
+    #      * address
+    #      * connected
+    #      * contractName
+    #      * lastUpdate
+    #      * name
+    #      * number (make it id as well of this table -- used below)
+    #      * position_latitude
+    #      * position_longitude
+    #      * status
+    #      * totalStands_capacity
+    #    * Create a table in DB to store all the bikes
+    #      * id (UUID apparently)
+    #      * frameId
+    #      * CONTINUE TO SEARCH THE OTHER FIELDS of bikes !!!
+    #    * Create a table in DB to store the changes in bikes at station
+    #      * station_id (the id of the station above)
+    #      * station_id (the id of the station above)
