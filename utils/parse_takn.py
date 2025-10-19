@@ -9,7 +9,7 @@ if __name__ == '__main__':
           "The Takn is used for API access to JCDecaux bike system.\n"
           "It is not a secret, but it is not meant to be shared publicly.\n"
           "You can find it in your local storage in your browser. It is hardcored in the JavaScript code.\n\n"
-          "To programmatically get this token, you can use the `bike_info_fetching.py` script.\n")
+          "To programmatically get this token, you can use the `component/commercial_bike.py` script.\n")
     input_token = input("Enter the token cpr_access_token, a.k.a. takn: ")
 
     # We don't care about the signature part of the JWT, so we can ignore it.
